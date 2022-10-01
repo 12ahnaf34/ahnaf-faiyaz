@@ -10,11 +10,12 @@ const colors = {
 
 export const Navbar = styled.div`
   position: fixed;
+  max-width: 100%;
   top: 0;
   left: 0;
   right: 0;
   z-index: 99;
-  padding: 10px 15px;
+  padding: 20px 15px;
   background-color: ${colors.light};
   border-bottom: 4px solid ${colors.grey};
 
@@ -48,7 +49,7 @@ export const SidebarButton = styled(Button)`
 export const List = styled.ul`
   display: flex;
   container-type: inline-container;
-  width: 500px;
+  width: 600px;
   grid-area: List;
   justify-content: space-between;
   list-style: none;
@@ -59,21 +60,26 @@ export const List = styled.ul`
 `;
 
 export const Dropdown = styled.ul`
+  position: relative;
+  right: 45px;
   display: flex;
-  width: 150px;
+  width: 100cqi;
   flex-direction: column;
   background-color: ${colors.light};
   list-style: none;
-  padding: 0 0 0 5px;
-  margin: 10px;
+  margin: 20px;
 `;
 
 export const ListItem = styled.li`
-  color: ${colors.dark};
   text-align: left;
+  color: ${colors.dark};
+  font-size: 4cqi;
+  padding: 5px;
+  margin-left: 10px;
 
   &:hover {
     color: ${colors.gold};
+    background-color: ${colors.dark};
   }
 `;
 
@@ -82,7 +88,7 @@ export const Logo = styled.img`
   grid-area: Logo;
   position: absolute;
   right: 20px;
-  top: 2px;
+  top: 11px;
   height: 60px;
   align-item: right;
 

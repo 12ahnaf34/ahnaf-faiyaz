@@ -1,16 +1,42 @@
-import React, { useState } from "react";
-import GlobalStyles, { Container } from "../GlobalStyles";
-
-import Landing from "../components/Landing/Landing";
+import React, { useRef } from "react";
+import GlobalStyles from "../GlobalStyles";
 import Header from "../components/Header/Header";
+import Landing from "../components/Landing/Landing";
+import Profile from "../components/Profile/Profile";
+import PortfolioProjects from "../components/PortfolioProjects/PortfolioProjects";
 //CSS
+import { MainContainer, ScrollbarWrapper } from "./Home.styled";
+import ContactForm from "../components/ContactForm/ContactForm";
 
 export default function Home() {
+  const landingSection = useRef();
+  const profileSection = useRef();
+  const portfolioProjectsSection = useRef();
+  const contactSection = useRef();
+
+  const goTo = (section) => {
+    section.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <div>
+    <ScrollbarWrapper>
       <GlobalStyles />
-      <Header />
-      <Landing />
-    </div>
+      <MainContainer>
+        <Header
+          landingSection={landingSection}
+          profileSection={profileSection}
+          portfolioProjectsSection={portfolioProjectsSection}
+          contactSection={contactSection}
+          goTo={goTo}
+        />
+        <span ref={landingSection}></span>
+        <Landing />
+        <br ref={profileSection}></br>
+        <Profile />
+        <PortfolioProjects portfolioProjectsSection={portfolioProjectsSection} />
+        <span ref={contactSection}></span>
+        <ContactForm />
+      </MainContainer>
+    </ScrollbarWrapper>
   );
 }

@@ -27,6 +27,7 @@ html{
   }
 }
 
+
 body {
   font-family: "Norwester";
   font-weight: 400;
@@ -35,6 +36,20 @@ body {
   background:${colors.light};
   background-color:${colors.light};
   color:${colors.dark};
+
+  
+  ::-webkit-scrollbar {
+    display: block;
+    background:${colors.light};
+    width:10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    display: block;
+    background:${colors.gold};
+    border:2px solid ${colors.gold};
+    border-radius:3px;
+    width:2px;
+  }
 }
 `;
 
@@ -65,7 +80,7 @@ export const Container = styled.div`
 `;
 
 export const Button = styled.button`
-  border-radius: ${({ bigRadius }) => (bigRadius ? "30px" : "20px")};
+  border-radius: ${({ bigRadius }) => (bigRadius ? "30px" : "15px")};
   background-color: ${({ primary }) => (primary ? colors.gold : colors.light)};
   color: ${({ primary }) => (primary ? colors.dark : colors.dark)};
   padding: ${({ big }) => (big ? "18px 30px" : "10px 28px")};
