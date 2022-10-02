@@ -41,7 +41,7 @@ export default function PortfolioProjects(props) {
               <SiteThumbnail src="/vite.svg" />
             </SiteLink>
           </SubContainer>
-          <Description fontFamily="Bahnschrift" fontSize="1cqi" fontColor={colors.light} background={colors.dark}>
+          <Description primary fontSize="1cqi" fontColor={colors.light} background={colors.dark}>
             Note: Backend hosted on Heroku
           </Description>
         </Item>
@@ -82,7 +82,7 @@ export default function PortfolioProjects(props) {
               <SiteThumbnail src="/nextjs-icon.svg" />
             </SiteLink>
           </SubContainer>
-          <Description fontFamily="Bahnschrift" fontSize="1cqi" fontColor={colors.light} background={colors.dark}>
+          <Description primary fontSize="1cqi" fontColor={colors.light} background={colors.dark}>
             Note: Government API used to fetch weather data, it sometimes doesn't return data. Refreshing the page should resolve the issue.
           </Description>
         </Item>
