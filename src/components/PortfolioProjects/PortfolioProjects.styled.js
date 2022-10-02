@@ -117,7 +117,7 @@ export const Description = styled.span`
   margin: 5px;
   padding: 5px;
   font-size: ${({ fontSize }) => fontSize || "2cqi"};
-  font-family: ${({ primary }) => (primary ? "url('../../fonts/bahnschrift.ttf')" : " url('../../fonts/norwester.otf')")};
+  font-family: ${({ primary }) => (primary ? "Bahnschrift" : "Norwester")};
 
   @media (max-width: 800px) {
     align-items: middle;

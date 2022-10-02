@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { Button, colors } from "../../GlobalStyles";
-import "../../fonts/norwester.otf";
 
 export const LandingContainer = styled.div`
   display: grid;
@@ -8,7 +7,7 @@ export const LandingContainer = styled.div`
   container-type: inline-container;
   height: 100cqh;
   background-color: ${colors.gold};
-  font-family: url("../../fonts/norwester.otf");
+  font-family: "Norwester";
   justify-items: center;
 
   @media (max-width: 1050px) {

@@ -7,6 +7,7 @@ import PortfolioProjects from "../components/PortfolioProjects/PortfolioProjects
 //CSS
 import { MainContainer, ScrollbarWrapper } from "./Home.styled";
 import ContactForm from "../components/ContactForm/ContactForm";
+import GlobalFonts from "../fonts/GlobalFonts";
 
 export default function Home() {
   const landingSection = useRef();
@@ -21,6 +22,7 @@ export default function Home() {
   return (
     <ScrollbarWrapper>
       <GlobalStyles />
+      <GlobalFonts />
       <MainContainer>
         <Header
           landingSection={landingSection}
