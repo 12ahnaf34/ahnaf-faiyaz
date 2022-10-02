@@ -43,7 +43,7 @@ html{
 
 
 body {
-  font-family: "Norwester";
+  font-family: url("./fonts/norwester.otf");
   font-weight: 400;
   line-height: 1.6;
   font-size: 1.6rem;
