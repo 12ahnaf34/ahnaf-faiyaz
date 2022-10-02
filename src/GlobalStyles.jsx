@@ -18,19 +18,6 @@ html{
   box-sizing: border-box;
   font-size: 62.5%;
 
-  @font-face {
-    font-family: "Bahnschrift";
-    src: local("Bahnschrift"), url("../fonts/bahnschrift.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-  }
-
-  @font-face {
-    font-family: "Norwester";
-    src: local("Norwester"), url("../fonts/norwester.otf") format("opentype");
-    font-style: normal;
-    font-weight: normal;
-  }
 
   @media only screen and (max-width: 1200px){
     font-size: 58%;
@@ -50,21 +37,6 @@ body {
   background:${colors.light};
   background-color:${colors.light};
   color:${colors.dark};
-
-  @font-face {
-    font-family: "Bahnschrift";
-    src: local("Bahnschrift"), url("../fonts/bahnschrift.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-  }
-
-  @font-face {
-    font-family: "Norwester";
-    src: local("Norwester"), url("../fonts/norwester.otf") format("opentype");
-    font-style: normal;
-    font-weight: normal;
-  }
-
   
   ::-webkit-scrollbar {
     display: block;

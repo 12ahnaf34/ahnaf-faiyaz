@@ -19,7 +19,7 @@ export const Navbar = styled.div`
   background-color: ${colors.light};
   border-bottom: 4px solid ${colors.grey};
 
-  font-family: url("../../fonts/norwester.otf");
+  font-family: "Norwester";
 `;
 
 export const Nav = styled.div`
