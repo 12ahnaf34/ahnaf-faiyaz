@@ -2,9 +2,8 @@ import { colors } from "../../GlobalStyles";
 import styled from "styled-components";
 
 export const ProfileContainer = styled.div`
-  height: fit-content;
-  width: 100%;
   display: grid;
+  width: 100%;
   container-type: inline-container;
   margin-top: 200px;
   background-color: ${colors.grey};
@@ -16,6 +15,7 @@ export const ProfileContainer = styled.div`
     "Description Skills";
 
   @media (max-width: 1000px) {
+    width: 100%;
     margin-top: 250px;
     align-items: center;
     grid-template-columns: 1fr;
@@ -47,9 +47,8 @@ export const Heading = styled.h1`
 `;
 
 export const Description = styled.p`
-  height: fit-content;
-  text-align: top;
   grid-area: Description;
+  text-align: top;
   margin: 10px 6cqi;
   background-color: ${({ backgroundColor }) => backgroundColor || colors.grey};
   font-family: "Bahnschrift";
@@ -57,22 +56,25 @@ export const Description = styled.p`
   color: ${colors.dark};
 
   @media (max-width: 1000px) {
+    width: 90cqi;
     font-size: 4cqi;
   }
 `;
 
 export const SkillsContainer = styled.div`
-  height: fit-content;
-  width: 100%;
+  grid-area: Skills;
   margin: 0cqi;
   text-align: center;
-  grid-area: Skills;
   background-color: ${colors.grey};
+
+  @media (max-width: 1000px) {
+    width: 100cqi;
+    font-size: 4cqi;
+  }
 `;
 
 export const Skills = styled.span`
   width: fit-content;
-  height: fit-content;
   background-color: ${({ backgroundColor }) => backgroundColor || colors.dark};
   color: ${({ color }) => color || colors.light};
   border-radius: 2px;
@@ -91,14 +93,13 @@ export const Skills = styled.span`
   }
 
   @media (max-width: 400px) {
-    font-size: 5cqi;
+    font-size: 3cqi;
     margin: 5px;
   }
 `;
 
 export const CustomSpan = styled.span`
   width: fit-content;
-  height: fit-content;
   background-color: ${({ backgroundColor }) => backgroundColor || colors.dark};
   color: ${({ color }) => color || colors.light};
   font-size: ${({ fontSize }) => fontSize || "2cqi"};
