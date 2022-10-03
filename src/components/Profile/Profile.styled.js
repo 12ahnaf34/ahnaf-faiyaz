@@ -68,7 +68,7 @@ export const SkillsContainer = styled.div`
   background-color: ${colors.grey};
 
   @media (max-width: 1000px) {
-    width: 100cqi;
+    width: 90cqi;
     font-size: 4cqi;
   }
 `;
