@@ -32,7 +32,7 @@ export default function Home() {
           goTo={goTo}
         />
         <span ref={landingSection}></span>
-        <Landing />
+        <Landing goTo={goTo} portfolioProjectsSection={portfolioProjectsSection} />
         <br ref={profileSection}></br>
         <Profile />
         <PortfolioProjects portfolioProjectsSection={portfolioProjectsSection} />
