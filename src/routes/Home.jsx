@@ -8,6 +8,7 @@ import PortfolioProjects from "../components/PortfolioProjects/PortfolioProjects
 import { MainContainer, ScrollbarWrapper } from "./Home.styled";
 import ContactForm from "../components/ContactForm/ContactForm";
 import GlobalFonts from "../fonts/GlobalFonts";
+import Footer from "../components/Footer/Footer";
 
 export default function Home() {
   const landingSection = useRef();
@@ -38,6 +39,7 @@ export default function Home() {
         <PortfolioProjects portfolioProjectsSection={portfolioProjectsSection} />
         <span ref={contactSection}></span>
         <ContactForm />
+        <Footer />
       </MainContainer>
     </ScrollbarWrapper>
   );
