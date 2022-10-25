@@ -30,6 +30,7 @@ export default function PortfolioProjects(props) {
             <Thumbnail src="star_wars_thumb.png" alt="Star Wars" />
           </YoutubeLink>
           <SubContainer>
+            <Description column="1/3">React</Description>
             <GithubLink href="https://github.com/12ahnaf34/star-wars" target="_blank" rel="noreferrer noopener">
               <FaGithub />
             </GithubLink>
@@ -45,6 +46,8 @@ export default function PortfolioProjects(props) {
             <Thumbnail src="todoList_thumb.png" alt="Todo List" />
           </YoutubeLink>
           <SubContainer>
+            <Description>React</Description>
+            <Description>Airtable</Description>
             <GithubLink href="https://github.com/12ahnaf34/ctd-react-sparrow" target="_blank" rel="noreferrer noopener">
               <FaGithub />
             </GithubLink>
@@ -60,6 +63,8 @@ export default function PortfolioProjects(props) {
             <Thumbnail src="weather_app_thumb.png" alt="Weather App" />
           </YoutubeLink>
           <SubContainer>
+            <Description>Next.js</Description>
+            <Description>Firebase</Description>
             <GithubLink href="https://github.com/12ahnaf34/Weather-App" target="_blank" rel="noreferrer noopener">
               <FaGithub />
             </GithubLink>
@@ -78,6 +83,8 @@ export default function PortfolioProjects(props) {
             <Thumbnail src="/stock_journal_thumb.png" alt="Stock Journal" />
           </YoutubeLink>
           <SubContainer>
+            <Description>React</Description>
+            <Description>Node.js</Description>
             <GithubLink href="https://github.com/12ahnaf34/Stock-Journal" target="_blank" rel="noreferrer noopener">
               <FaGithub />
             </GithubLink>

@@ -118,6 +118,7 @@ export const Description = styled.span`
   padding: 5px;
   font-size: ${({ fontSize }) => fontSize || "2cqi"};
   font-family: ${({ primary }) => (primary ? "Bahnschrift" : "Norwester")};
+  grid-column: ${({ column }) => column};
 
   @media (max-width: 800px) {
     align-items: middle;
