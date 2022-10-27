@@ -35,6 +35,8 @@ export const ProjectsGrid = styled.div`
 
 export const Item = styled.div`
   display: grid;
+  grid-template-columns: 1fr;
+
   margin: auto;
   gap: 5px;
   justify-items: center;
@@ -67,9 +69,14 @@ export const YoutubeLink = styled.a`
 
 export const GithubLink = styled.a`
   display: grid;
+
+  text-decoration: none;
   margin: auto;
-  color: ${colors.light};
-  font-size: 3cqi;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: ${colors.gold};
+  color: ${colors.dark};
+  font-size: 1.5cqi;
   transition: all 0.4s ease;
 
   &:hover {
@@ -87,7 +94,14 @@ export const GithubLink = styled.a`
 
 export const SiteLink = styled.a`
   display: grid;
+
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: ${colors.gold};
+  color: ${colors.dark};
   margin: auto;
+  font-size: 1.5cqi;
   transition: all 0.4s ease;
 
   &:hover {
@@ -112,11 +126,11 @@ export const SiteThumbnail = styled.img`
 `;
 
 export const Description = styled.span`
-  background-color: ${({ background }) => background || colors.light};
-  color: ${({ fontColor }) => fontColor || colors.dark};
+  background-color: ${({ background }) => background || colors.dark};
+  color: ${({ fontColor }) => fontColor || colors.light};
   margin: 5px;
   padding: 5px;
-  font-size: ${({ fontSize }) => fontSize || "2cqi"};
+  font-size: ${({ fontSize }) => fontSize || "1cqi"};
   font-family: ${({ primary }) => (primary ? "Bahnschrift" : "Norwester")};
   grid-column: ${({ column }) => column};
 
