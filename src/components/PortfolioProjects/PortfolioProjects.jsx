@@ -30,12 +30,14 @@ export default function PortfolioProjects(props) {
             <Thumbnail src="star_wars_thumb.png" alt="Star Wars" />
           </YoutubeLink>
           <SubContainer>
-            <Description column="1/3">React</Description>
+            <Description primary column="1/3">
+              Made using React. Data fetched from Star Wars API.
+            </Description>
             <GithubLink href="https://github.com/12ahnaf34/star-wars" target="_blank" rel="noreferrer noopener">
-              <FaGithub />
+              Github
             </GithubLink>
             <SiteLink href="https://star-wars-15424c.netlify.app" target="_blank" rel="noreferrer noopener">
-              <SiteThumbnail src="/vite.svg" />
+              Website
             </SiteLink>
           </SubContainer>
         </Item>
@@ -46,13 +48,14 @@ export default function PortfolioProjects(props) {
             <Thumbnail src="todoList_thumb.png" alt="Todo List" />
           </YoutubeLink>
           <SubContainer>
-            <Description>React</Description>
-            <Description>Airtable</Description>
+            <Description primary column="1/3">
+              Made using React. Data stored in Airtable.
+            </Description>
             <GithubLink href="https://github.com/12ahnaf34/ctd-react-sparrow" target="_blank" rel="noreferrer noopener">
-              <FaGithub />
+              Github
             </GithubLink>
             <SiteLink href="https://todolist-7149e4.netlify.app" target="_blank" rel="noreferrer noopener">
-              <SiteThumbnail src="/react-icon.svg" />
+              Website
             </SiteLink>
           </SubContainer>
         </Item>
@@ -63,13 +66,14 @@ export default function PortfolioProjects(props) {
             <Thumbnail src="weather_app_thumb.png" alt="Weather App" />
           </YoutubeLink>
           <SubContainer>
-            <Description>Next.js</Description>
-            <Description>Firebase</Description>
+            <Description primary column="1/3">
+              Made using Next.js. Data stored in Firebase.
+            </Description>
             <GithubLink href="https://github.com/12ahnaf34/Weather-App" target="_blank" rel="noreferrer noopener">
-              <FaGithub />
+              Github
             </GithubLink>
             <SiteLink href="https://weatherapp-64b823.netlify.app/" target="_blank" rel="noreferrer noopener">
-              <SiteThumbnail src="/nextjs-icon.svg" />
+              Website
             </SiteLink>
           </SubContainer>
           <Description primary fontSize="1cqi" fontColor={colors.light} background={colors.dark}>
@@ -83,17 +87,18 @@ export default function PortfolioProjects(props) {
             <Thumbnail src="/stock_journal_thumb.png" alt="Stock Journal" />
           </YoutubeLink>
           <SubContainer>
-            <Description>React</Description>
-            <Description>Node.js</Description>
+            <Description primary column="1/3">
+              Made using React. Backend made using Node.js.
+            </Description>
             <GithubLink href="https://github.com/12ahnaf34/Stock-Journal" target="_blank" rel="noreferrer noopener">
-              <FaGithub />
+              Github
             </GithubLink>
             <SiteLink href="https://stockjournal.netlify.app" target="_blank" rel="noreferrer noopener">
-              <SiteThumbnail src="/vite.svg" />
+              Website
             </SiteLink>
           </SubContainer>
           <Description primary fontSize="1cqi" fontColor={colors.light} background={colors.dark}>
-            Note: Backend hosted on Heroku
+            Note: Backend hosted on Heroku so it may take 30 seconds for website to load up.
           </Description>
         </Item>
       </ProjectsGrid>
