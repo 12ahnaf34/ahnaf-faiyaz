@@ -107,6 +107,14 @@ export const SiteLink = styled.a`
   &:hover {
     transform: translateY(10px) scale(1.2);
   }
+
+  @media (max-width: 800px) {
+    font-size: 6cqi;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 9cqi;
+  }
 `;
 
 export const Thumbnail = styled.img`
