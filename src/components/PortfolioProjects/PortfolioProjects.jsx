@@ -25,6 +25,24 @@ export default function PortfolioProjects(props) {
       <Heading>Projects</Heading>
       <ProjectsGrid>
         <Item>
+          <Title>Clothaven</Title>
+          <YoutubeLink href="https://youtu.be/wjlLld3euWU" target="_blank" rel="noreferrer noopener">
+            <Thumbnail src="clothaven_thumb.png" alt="Clothaven" />
+          </YoutubeLink>
+          <SubContainer>
+            <Description primary column="1/3">
+              Made using React{"(Typescript)"}. User data stored in Firebase.
+            </Description>
+            <GithubLink href="https://github.com/12ahnaf34/tshirts" target="_blank" rel="noreferrer noopener">
+              Github
+            </GithubLink>
+            <SiteLink href="https://clothaven.netlify.app/" target="_blank" rel="noreferrer noopener">
+              Website
+            </SiteLink>
+          </SubContainer>
+        </Item>
+
+        <Item>
           <Title>Star Wars</Title>
           <YoutubeLink href="https://youtu.be/UxzYZzb2Z2I" target="_blank" rel="noreferrer noopener">
             <Thumbnail src="star_wars_thumb.png" alt="Star Wars" />
